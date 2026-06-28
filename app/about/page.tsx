@@ -1,5 +1,5 @@
 import Image from "next/image"
-const skills = ["TypeScript", "React", "Next.js", "Node.js", "PostgreSQL", "Docker"]
+import Skills from "@/components/Skills"
 export default function About() {
   return (
     <section className="flex flex-col gap-8">
@@ -23,14 +23,7 @@ export default function About() {
         I love learning by building, participating in hackathons, and turning ideas into projects that challenge me to grow as a developer. My goal is simple: keep learning, keep creating, and build technology that makes a difference.
         </p>
       </div>
-      <div>
-        <h3 className="text-xl font-semibold mb-3">Skills</h3>
-        <div className="flex flex-wrap gap-2">
-          {skills.map((s) => (
-            <span key={s} className="bg-gray-100 px-3 py-1 rounded-full text-sm">{s}</span>
-          ))}
-        </div>
-      </div>
+      <Skills/>
     </section>
   )
 }

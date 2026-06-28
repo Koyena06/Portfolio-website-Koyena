@@ -14,7 +14,7 @@ export default function RootLayout({
   return (
     <html
       lang="en">
-      <body className="bg-auto text-zinc-900 font-sans">{children}
+      <body className="bg-white text-zinc-900 font-sans">
       <Navbar />
       <main className="max-w-4xl mx-auto px-6 py-12">{children}</main>
       <Footer />
