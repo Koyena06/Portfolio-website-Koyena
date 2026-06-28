@@ -9,7 +9,7 @@ export default function ProjectCard({ title, description, tech, github, live }: 
         ))}
       </div>
       <div className="flex gap-4 text-sm mt-auto pt-2">
-        <a href={github} target="_blank" className="underline">GitHub</a>
+        <a href={github} target="_blank" className="underline">GitHub Link</a>
         {live && <a href={live} target="_blank" className="underline">Live</a>}
       </div>
     </div>

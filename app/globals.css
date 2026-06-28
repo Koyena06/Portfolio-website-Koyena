@@ -1,3 +1,29 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500&display=swap');
+@import "tailwindcss";
+:root {
+  --bg: #F5F0EB;
+  --surface: #EDEAE5;
+  --text: #1a1a1a;
+  --muted: #6b6b6b;
+  --accent: #B8973A;
+  --accent-hover: #9a7d30;
+  --border: #d4cfc9;
+}
+
+* {
+  cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20'%3E%3Ccircle cx='10' cy='10' r='4' fill='%23B8973A'/%3E%3C/svg%3E") 10 10, auto;
+}
+
+a, button {
+  cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Ccircle cx='12' cy='12' r='6' fill='%23B8973A' opacity='0.8'/%3E%3C/svg%3E") 12 12, pointer;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: 'Inter', sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+}

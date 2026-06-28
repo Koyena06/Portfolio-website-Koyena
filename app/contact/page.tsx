@@ -3,7 +3,7 @@ export default function Contact() {
     <section className="flex flex-col gap-6">
       <h2 className="text-3xl font-bold">Get in Touch</h2>
       <p className="text-gray-600">
-        I'm open to full-time roles and freelance projects. Best way to reach me:
+        I'm open to full-time roles, internships and freelance projects. Best way to reach me:
       </p>
       <a
         href="mailto:koyena.sutradhar@gmail.com"

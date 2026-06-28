@@ -7,8 +7,8 @@ export default function About() {
         <Image
           src="/profile.png"
           alt="Koyena Sutradhar"
-          width={120}
-          height={120}
+          width={170}
+          height={170}
           className="rounded-full"
         />
         <div className="text-center">
