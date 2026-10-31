@@ -1,29 +1,30 @@
+import { Binary, Braces, Atom, Triangle, Database, GitBranch, Puzzle } from "lucide-react"
+
 const skills = [
-  {name: "Data Structures and Algorithms", icon:"📊"},
-  { name: "TypeScript", icon: "🔷" },
-  { name: "React", icon: "⚛️" },
-  { name: "Next.js", icon: "▲" },
-  { name: "PostgreSQL", icon: "🐘" },
-  { name: "Git", icon: "🔀" },
-  {name: "Problem Solving", icon:"📝"},
+  { name: "Data Structures and Algorithms", Icon: Binary },
+  { name: "TypeScript", Icon: Braces },
+  { name: "React", Icon: Atom },
+  { name: "Next.js", Icon: Triangle },
+  { name: "PostgreSQL", Icon: Database },
+  { name: "Git", Icon: GitBranch },
+  { name: "Problem Solving", Icon: Puzzle },
 ]
 
 export default function Skills() {
   return (
     <div>
-      <h3 className="text-2xl font-bold mb-6" style={{ color: 'var(--text)' }}>Skills</h3>
-      <div className="grid grid-cols-3 sm:grid-cols-4 gap-3">
-        {skills.map((s) => (
-          <div key={s.name}
-            style={{ backgroundColor: 'var(--surface)', border: '1px solid var(--border)' }}
-            className="flex flex-col items-center gap-2 px-4 py-4 rounded-md hover:border-[--accent] transition-colors duration-200">
-            <span className="text-2xl">{s.icon}</span>
-            <span className="text-xs tracking-wider uppercase" style={{ color: 'var(--muted)' }}>
-              {s.name}
+      <h3 className="text-2xl font-medium mb-5">Skills</h3>
+      <ul className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
+        {skills.map(({ name, Icon }) => (
+          <li key={name} className="card flex items-center gap-3 px-4 py-4">
+            <span className="grid place-items-center h-10 w-10 shrink-0 rounded-xl"
+              style={{ background: "var(--raised)", color: "var(--accent)" }}>
+              <Icon size={20} strokeWidth={1.7} />
             </span>
-          </div>
+            <span className="text-sm leading-snug">{name}</span>
+          </li>
         ))}
-      </div>
+      </ul>
     </div>
   )
 }
