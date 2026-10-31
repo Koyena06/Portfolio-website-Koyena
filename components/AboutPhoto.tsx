@@ -7,7 +7,7 @@ import { ImagePlus } from "lucide-react"
  * Drop your picture at  public/about-photo.jpg  (portrait, ~1200x1500 works well)
  * and it replaces the placeholder automatically.
  */
-export default function AboutPhoto({ src = "/about-photo.jpg" }: { src?: string }) {
+export default function AboutPhoto({ src = "/about-photo.jpeg" }: { src?: string }) {
   const [missing, setMissing] = useState(false)
   return (
     <figure className="relative w-full max-w-[460px] mx-auto lg:mx-0">
